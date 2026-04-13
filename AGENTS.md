@@ -42,6 +42,8 @@ confidence: high | medium | low
 
 "Concepts" cover patterns, techniques, frameworks, languages — any reusable development knowledge.
 
+Every concept page MUST include a ## Key Code section with a concise, actionable code snippet (5–15 lines) showing the canonical pattern. This is the most important section — it makes the wiki directly usable when coding. Choose the minimal example that demonstrates the concept, not the full implementation from the source.
+
 ## Hot Cache (`wiki/hot.md`)
 Read `wiki/hot.md` silently at the start of EVERY session, before responding.
 This file contains ~500 words of recent session context. Do not summarize it
