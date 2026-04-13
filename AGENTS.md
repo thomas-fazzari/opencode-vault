@@ -10,7 +10,7 @@ Software Engineering Knowledge — patterns, techniques, frameworks, languages
 - `wiki/log.md` — append-only activity log. One line per entry.
 - `wiki/overview.md` — high-level synthesis. Revise after major ingests.
 - `wiki/hot.md` — session hot cache (~500 words). Read silently at session start.
-- `OPENCODE.md` — this file. Re-read at the start of every session.
+- `AGENTS.md` — this file. Re-read at the start of every session.
 
 ## Page Conventions
 Every wiki page MUST have YAML frontmatter. Two page types only:
