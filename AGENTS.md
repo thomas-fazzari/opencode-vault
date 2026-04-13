@@ -63,11 +63,18 @@ When I say "ingest [filename]" or "ingest raw/[path]":
 6. If new info contradicts an existing page, flag it explicitly.
 7. Create new concept pages if the source introduces them.
 8. Append one-line entry to wiki/log.md.
-9. A single ingest should touch 5–15 wiki pages.
+9. Rebuild the search index: `qmd index rebuild eng-wiki`
+10. A single ingest should touch 5–15 wiki pages.
+
+## Recall Workflow
+Before answering a question or starting to code, search the wiki for relevant knowledge:
+1. Run: `qmd search "{topic}" --collection eng-wiki` to find relevant pages.
+2. Read the top 3–5 results directly.
+3. Use that knowledge to ground your answer or implementation.
 
 ## Query Workflow
 When I ask a question:
-1. Read wiki/index.md to identify relevant pages.
+1. Run `qmd search "{question}" --collection eng-wiki` to find relevant pages.
 2. Read those pages directly.
 3. Synthesize an answer with [[wiki-link]] citations.
 4. If the answer is valuable, offer to file it as a new concept page.
@@ -75,7 +82,7 @@ When I ask a question:
 ## Coding Workflow
 When I ask you to write, review, or debug code:
 1. Read wiki/hot.md at session start (already done).
-2. Read wiki/index.md to check if relevant patterns or concepts exist.
+2. Run `qmd search "{topic}" --collection eng-wiki` to check if relevant patterns exist.
 3. If a relevant concept page exists, read it BEFORE coding.
 4. Apply the knowledge from the wiki to your implementation.
 5. If you discover a new pattern worth recording, suggest adding it.
