@@ -63,8 +63,9 @@ When I say "ingest [filename]" or "ingest raw/[path]":
 6. If new info contradicts an existing page, flag it explicitly.
 7. Create new concept pages if the source introduces them.
 8. Append one-line entry to wiki/log.md.
-9. Rebuild the search index: `qmd index rebuild eng-wiki`
-10. A single ingest should touch 5–15 wiki pages.
+9. Refresh the search index: `qmd update -c eng-wiki`
+10. Refresh embeddings when content changed materially: `qmd embed`
+11. A single ingest should touch 5–15 wiki pages.
 
 ## Recall Workflow
 Before answering a question or starting to code, search the wiki for relevant knowledge:
