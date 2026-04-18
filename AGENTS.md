@@ -69,10 +69,11 @@ When I say "ingest [filename]" or "ingest raw/[path]":
 
 ## Query Workflow
 When I ask a question:
-1. Run `qmd search "{question}" --collection eng-wiki` to find relevant pages.
-2. Read those pages directly.
-3. Synthesize an answer with [[wiki-link]] citations.
-4. If the answer is valuable, offer to file it as a new concept page.
+1. Run `qmd search "{topic}" --collection eng-wiki` — use broad, general terms (e.g. "caching" not "HybridCache distributed Redis TTL eviction")
+2. If results sparse or irrelevant, retry max 3 times with broader/alternate term
+3. Read the results pages directly.
+4. Synthesize an answer with [[wiki-link]] citations.
+5. If the answer is valuable, offer to file it as a new concept page.
 
 ## Lint Workflow
 When I say "lint":
